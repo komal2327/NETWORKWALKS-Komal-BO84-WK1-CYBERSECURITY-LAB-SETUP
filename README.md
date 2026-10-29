@@ -306,13 +306,12 @@ This project strengthened my practical understanding of:
 cybersecurity-lab-setup/
 ├── README.md
 ├── screenshots/
-│   ├── 01-virtualbox-manager.png
-│   ├── 02-kali-linux-running.png
-│   ├── 03-nat-network-configuration.png
-│   ├── 04-network-configuration.png
-│   ├── 05-connectivity-dns-tests.png
-│   └── 06-vm-snapshot.png
-└── troubleshooting.md
+   ├── 01-virtualbox-manager.png
+   ├── 02-kali-linux-running.png
+   ├── 03-nat-network-configuration.png
+   ├── 04-network-configuration.png
+   └── 05-vm-snapshot.png
+
 ```
 
 The screenshot filenames above are suggested names. Ensure that the files you upload match the paths referenced in this README.

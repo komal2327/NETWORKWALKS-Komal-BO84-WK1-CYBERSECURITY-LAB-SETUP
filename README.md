@@ -62,14 +62,13 @@ Record the actual values from your environment.
 
 | Configuration | Value |
 |---|---|
-| Host operating system | [Enter your host OS] |
+| Host operating system | Windows |
 | Virtualization platform | Oracle VirtualBox |
 | Guest operating system | Kali Linux |
 | Virtual network mode | NAT Network |
-| NAT Network name | [Enter configured network name] |
-| IPv4 network/prefix | [Enter configured subnet] |
-| DHCP configuration | [Enabled / Disabled] |
-| Recovery snapshot | [Enter snapshot name] |
+| NAT Network name | NATNETWORK |
+| IPv4 network/prefix | 10.0.0.1 |
+| Recovery snapshot | KaliLinux |
 
 ## ⚙️ Implementation & Verification
 
@@ -193,13 +192,10 @@ A failed ping does not always mean that a destination is unreachable; ICMP traff
 
 | Test | Actual result | Status |
 |---|---|---|
-| Gateway reachability | [Record result] | [Pass / Fail / Inconclusive] |
-| External IP connectivity | [Record result] | [Pass / Fail / Inconclusive] |
-| DNS resolution | [Record result] | [Pass / Fail / Inconclusive] |
+| Gateway reachability | Pass |
+| External IP connectivity | Pass |
+| DNS resolution | Pass |
 
-**Evidence:**
-
-![Network connectivity and DNS test screenshot placeholder](screenshots/05-connectivity-dns-tests.png)
 
 ### 6. Create a Clean VM Snapshot
 
@@ -214,7 +210,7 @@ A failed ping does not always mean that a destination is unreachable; ICMP traff
 
 **Verification:** The saved snapshot is visible in VirtualBox Snapshot Manager.
 
-**Snapshot name:** [Enter the actual snapshot name]
+**Snapshot name:** KaliLinux
 
 **Evidence:**
 
@@ -265,19 +261,6 @@ Confirm that the VM is connected to the intended NAT Network and that the networ
 
 **5. Re-test after making a change**
 
-Record the exact corrective action and repeat the relevant tests to verify the outcome.
-
-### Incident Record
-
-Use this template to document an issue you actually encountered:
-
-- **Issue observed:** [Describe the symptom or error]
-- **Investigation:** [Commands, settings, or logs inspected]
-- **Root cause:** [Confirmed cause, if identified]
-- **Resolution:** [Change made]
-- **Verification:** [Test and observed result]
-
-If no issue occurred during the project, keep this section as a troubleshooting reference rather than claiming an incident that did not happen.
 
 ## 📚 Key Learnings
 
